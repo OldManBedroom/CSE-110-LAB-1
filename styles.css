@@ -1,0 +1,56 @@
+#Section_1 {
+    background-color: rgb(245, 240, 230);
+}
+#Section_2 {
+    background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');  /* Set the background image */
+    background-size: cover;  /* Make the image cover the entire div */
+    background-position: center;  /* Center the image */
+    color: white;  /* Change the text color to contrast the background */
+}
+.Sections {
+    width: 100%;
+    display: inline-block;
+}
+ul {
+    /* display: inline; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #182b49;
+    color: white;
+  }
+
+  #Nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  html {
+    scroll-padding-top: 146.667px;  /* Adjust the scroll position by 80px */
+}
+.IMG {
+    max-width: 400px;
+}
+body {
+    font-size: 28px;
+}
