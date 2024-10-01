@@ -7,9 +7,17 @@
     background-position: center;  /* Center the image */
     color: white;  /* Change the text color to contrast the background */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Ensures padding is included in width/height calculations */
+}
 .Sections {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 ul {
     /* display: inline; */
@@ -25,7 +33,7 @@ ul {
   }
   
   li a {
-    display: block;
+    display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -53,4 +61,41 @@ ul {
 }
 body {
     font-size: 28px;
+}
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 25px;
+}
+
+/* Grid items (each grid box) */
+.grid-item {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 2px solid white; /* Optional: add border between grid items */
+  max-height: 500px;      /* Set max height */
+  overflow-y: auto;
+  background-color: #182b49;
+  color: white;
+}
+
+#Section_3_header {
+  margin: 10;
+  width: 90%;
+  display: block; /* Ensure it's a block element */
+}
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#Section_3 {
+  display: block;
+  background-color: rgb(245, 240, 230);
 }
