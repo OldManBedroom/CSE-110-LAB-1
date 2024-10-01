@@ -13,8 +13,7 @@
   box-sizing: border-box;  /* Ensures padding is included in width/height calculations */
 }
 .Sections {
-    margin: 10;
-    padding: 10;
+    padding: 20px;
     box-sizing: border-box;
     width: 100%;
     display: block;
@@ -22,7 +21,7 @@
 ul {
     /* display: inline; */
     list-style-type: none;
-    margin: 0;
+    margin-left: 20px;
     padding: 0;
     
     background-color: #333;
@@ -54,10 +53,12 @@ ul {
   }
 
   html {
-    scroll-padding-top: 146.667px;  /* Adjust the scroll position by 80px */
+    scroll-padding-top: 166.667px;  /* Adjust the scroll position by 80px */
 }
 .IMG {
     max-width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 body {
     font-size: 28px;
@@ -67,7 +68,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  margin: 25px;
+  
 }
 
 /* Grid items (each grid box) */
@@ -76,7 +77,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
   border: 2px solid white; /* Optional: add border between grid items */
   max-height: 500px;      /* Set max height */
   overflow-y: auto;
@@ -84,9 +84,18 @@ body {
   color: white;
 }
 
+#Section_1_header {
+  margin-bottom: 20px;
+  display: block; /* Ensure it's a block element */
+}
+
+#Section_2_header {
+  margin-bottom: 20px;
+  display: block; /* Ensure it's a block element */
+}
+
 #Section_3_header {
-  margin: 10;
-  width: 90%;
+  margin-bottom: 20px;
   display: block; /* Ensure it's a block element */
 }
 header:after {
@@ -98,4 +107,32 @@ header:after {
 #Section_3 {
   display: block;
   background-color: rgb(245, 240, 230);
+}
+
+.Sec_IMG {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width:800px){
+  .UL {
+    display: none;
+  }
+  .IMG {
+    max-width: 75%;
+  }
+  header {
+    font-size: 24px;
+  }
+  .Par {
+    font-size: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 25px;
+  }
 }
